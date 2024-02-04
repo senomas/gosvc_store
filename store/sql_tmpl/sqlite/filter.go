@@ -6,7 +6,7 @@ import (
 	"github.com/senomas/gosvc_store/store"
 )
 
-func filterToString(where []string, args []any, field string, filter any) ([]string, []any) {
+func FilterToString(where []string, args []any, field string, filter any) ([]string, []any) {
 	switch f := filter.(type) {
 	case store.FilterInt64:
 		switch f.Op {
